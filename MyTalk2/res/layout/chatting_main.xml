@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+        android:id="@+id/chatting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" 
+        android:background="#c04520">
+        <Button
+            android:id="@+id/chatting_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/back_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CHATTING"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"/>
+        <Button 
+            android:id="@+id/chatting_setting"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/setting_button"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_layout"
+        android:layout_below="@+id/chatting_title"
+        android:listSelector="@android:color/transparent"
+        android:background="#c4e2d8"
+        android:divider="@null" >
+
+	</ListView>
+	<ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/input_layout"
+        android:background="#aaa"/>
+    
+    <LinearLayout 
+        android:id="@+id/input_layout"
+        android:layout_height="45dip"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <EditText 
+            	android:id="@+id/text_edit"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"/>
+            <Button 
+                android:id="@+id/audio_input"
+                android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:visibility="invisible"
+            	android:text="按下说话"/>
+        </RelativeLayout>
+
+        <Button 
+            android:id="@+id/send_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="send"/>
+    </LinearLayout>
+</RelativeLayout>

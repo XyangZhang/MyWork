@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity" >
+
+    <TextView
+        android:id="@+id/mytalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="MYTALK" 
+        android:textSize="20sp"/>
+	<ImageView 
+	    android:id="@+id/enter_icon"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/mytalk"
+	    android:src="@drawable/enter_icon"
+	    android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/mytalk"
+        android:layout_marginTop="5dp"
+        android:text="Designed by dou7" 
+        android:textSize="13sp"/>
+    
+</RelativeLayout>

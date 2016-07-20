@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    tools:context=".QuestionActivity" >
+
+    <RelativeLayout 
+        android:id="@+id/ques_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" 
+        android:background="@drawable/title_bar">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="问题检测"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"/>
+    </RelativeLayout>
+    
+    <ViewFlipper
+		android:id="@+id/mViewFlipper"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ques_title"
+		android:layout_above="@+id/ques_next"
+		android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out">
+    
+        
+    </ViewFlipper>
+    
+    <Button
+        android:id="@+id/ques_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/confirm_button_1"
+        android:paddingLeft="60dip"
+        android:paddingRight="60dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:text="下一题"
+        android:textColor="#ffffff"
+        android:textSize="21sp" />
+
+</RelativeLayout>

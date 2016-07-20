@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingLeft="5dip" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="5dip">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="一 、健脑饮食方案"
+                 android:textSize="20sp"
+                 android:textColor="#20b2aa"/>
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="8dip"
+                android:background="#20b2aa"/>
+            <TextView 
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:paddingLeft="5dip"
+                android:text="饮食习惯"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="#20b2aa"/>
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dip"
+                 android:layout_marginRight="8dip"
+                 android:background="#f0ffff">
+                <ImageView 
+                    android:id="@+id/page2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/page2_1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/page2_1"
+                    android:text="  定时、定量、保质的良好饮食习惯:养成早餐在6点左右,午餐在12点左右,晚餐在18点左右的就餐习惯,可少食多餐,除三餐外可在上午9点和下午15点左右加餐.每餐七分饱适宜。每餐饭菜要保证一定的质量:营养丰富,容易消化,新鲜可口,荤素搭配合理。" />
+
+            </RelativeLayout>
+            
+            <TextView 
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:paddingLeft="5dip"
+                android:text="健脑营养素"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="#20b2aa"/>
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dip"
+                 android:layout_marginRight="8dip"
+                 android:background="#f0ffff">
+                <ImageView 
+                    android:id="@+id/page2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/page2_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/page2_2"
+                    android:text="  高蛋白、高不饱和脂肪酸、高维生素饮食: 如新鲜蔬菜、水果，瘦肉、鸡蛋、鱼等。维生素 C、 E、 B以及胡萝卜素能清除体内自由基 ,抗氧化。" />
+
+            </RelativeLayout>
+            
+            <TextView 
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:paddingLeft="5dip"
+                android:text="健脑食品"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="#20b2aa"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="4dip"
+                android:background="#f0ffff" >
+
+                <ImageView 
+                    android:id="@+id/page2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/page2_3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/page2_3"
+                    android:text="  常吃富含胆碱的食物:如豆制品,蛋类, 鱼类,肉类,花生,核桃,燕麦,小米等。" />
+
+            </RelativeLayout>
+            
+            <TextView 
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:paddingLeft="5dip"
+                android:text="健脑食疗"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="#20b2aa"/>
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dip"
+                 android:layout_marginRight="8dip"
+                 android:background="#f0ffff">
+                <ImageView 
+                    android:id="@+id/page2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/page2_4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/page2_4"
+                    android:text="  中医食疗方法:中医学认为痴呆的病位在脑,与心肝脾肾功能失调关系密切,是髓减脑消,气血不足致心神脑窍失养。故可食用补肝肾心脾,安神健脑的中药和食物进行滋补,如黄芪、茯苓、鹿角胶、龟胶、阿胶等。" />
+
+            </RelativeLayout>
+            
+            <TextView 
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:paddingLeft="5dip"
+                android:text="饮食禁忌"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="#20b2aa"/>
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dip"
+                 android:layout_marginRight="8dip"
+                 android:background="#f0ffff">
+                <ImageView 
+                    android:id="@+id/page2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/page2_5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/page2_5"
+                    android:text="  减少糖、盐、油的摄入量.少饮或不饮烈性酒,戒烟,或避免过多摄入味精。" />
+
+            </RelativeLayout>
+            
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="二、四肢发达，头脑强健"
+                android:textSize="20sp"
+                android:textColor="#ff8c00"
+                android:layout_marginTop="15dip"/>
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="8dip"
+                android:background="#ff8c00"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff2ef"
+                android:orientation="vertical"
+                android:layout_marginTop="10dip">
+                <LinearLayout 
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:layout_marginBottom="5dip">
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:src="@drawable/page2_8"/>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:src="@drawable/page2_7" />
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:src="@drawable/page2_6"/>
+                 </LinearLayout>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、智力及记忆锻炼,玩玩具预防老年性痴呆 。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、参加适宜的体育活动改善老年记忆障碍。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3、手指,脚趾操预防老年性痴呆。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4、音乐改善老年记忆障碍,选择自己最喜欢的轻松的音乐欣赏。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="三、乐活到老"
+                android:textSize="20sp"
+                android:textColor="#1e90ff"/>
+           <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="8dip"
+                android:background="#1e90ff"/>
+            
+           <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0ffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dip">
+                <LinearLayout 
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:layout_marginBottom="5dip">
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:src="@drawable/page2_9"/>
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:src="@drawable/page2_10" />
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:src="@drawable/page2_11"/>
+                 </LinearLayout>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、心胸豁达,知足常乐.保持心平气和,心情舒畅,心胸开阔。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、面对现实,走出误区。积极而适量参加一些社会活动,培养广泛的兴趣爱好,如绘画、音乐、养花、集邮、戏剧等,处理好各方面的人际关系,做到与众同乐,喜当“老顽童”。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3、结交朋友，经常谈心。遇到一些不愉快的事情，常在知音好友中宣泄郁闷，互相安慰，交流怀古，有助于保持心理平衡。"
+                    android:layout_marginBottom="3dip"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+           
+           
+           <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="四、健康诗"
+                android:textSize="20sp"
+                android:textColor="#ff4500"/>
+           <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="8dip"
+                android:background="#ff4500"/>
+           <RelativeLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="8dp"
+               android:paddingBottom="8dip"
+               android:background="#fff2ef"
+               android:layout_marginTop="15dip">
+               <TextView
+                   android:id="@+id/poe_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="活到老 学到老 老友老伴不可少"
+                    android:textSize="21sp"
+                    android:layout_marginBottom="7dip"/>
+               <TextView
+                   android:id="@+id/poe_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/poe_1"
+                    android:text="多动脑 沒烦恼 天天运动不会老"
+                    android:textSize="21sp"
+                    android:layout_marginBottom="7dip"/>
+               <TextView
+                   android:id="@+id/poe_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/poe_2"
+                    android:text="深海俞 橄榄油 蔬果豆谷来顾脑"
+                    android:textSize="21sp"
+                    android:layout_marginBottom="7dip"/>
+               <TextView
+                   android:id="@+id/poe_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/poe_3"
+                    android:text="保护头 控体重 血压血糖控制好"
+                    android:textSize="21sp"
+                    android:layout_marginBottom="7dip"/>
+               <TextView
+                   android:id="@+id/poe_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/poe_4"
+                    android:text="不抽烟 不抑郁 年老失智不来找"
+                    android:textSize="21sp"
+                    android:layout_marginBottom="7dip"/>
+           </RelativeLayout>
+           
+        </LinearLayout>
+    </ScrollView>
+    
+
+</RelativeLayout>

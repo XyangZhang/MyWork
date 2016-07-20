@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/text0"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="音乐名"/>
+    
+    <EditText 
+        android:id="@+id/EditTextName"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/text0"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="歌手"/>
+    
+    <EditText 
+        android:id="@+id/EditTextSinger"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"/>
+    
+    <Button 
+        android:id="@+id/ButtonAdd"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="添加"/>
+
+</LinearLayout>

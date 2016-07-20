@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="3dip" 
+        android:background="#20b2aa"
+        android:layout_below="@+id/ques_title"/>
+    <TextView 
+        android:id="@+id/ques_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/20"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:background="#20b2aa"
+        android:layout_marginLeft="20dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="6dip"/>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip">
+        <TextView 
+            android:id="@+id/ques_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现在请计算下面各题"
+            android:layout_marginLeft="5dip"
+            android:textSize="23sp"/>
+    </LinearLayout>
+     
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip">
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dip"
+        	android:text="98 - 7 = "
+        	android:textSize="@dimen/ques_text"/>
+
+        <EditText
+            android:id="@+id/ques_12_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:hint="请输入答案"
+            android:maxLines="1"
+            android:textSize="@dimen/ques_text" />
+
+	</LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip">
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dip"
+        	android:text="83 - 7 = "
+        	android:textSize="@dimen/ques_text"/>
+
+        <EditText
+            android:id="@+id/ques_12_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:hint="请输入答案"
+            android:maxLines="1"
+            android:textSize="@dimen/ques_text" />
+
+	</LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip">
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dip"
+        	android:text="66 - 7 = "
+        	android:textSize="@dimen/ques_text"/>
+        <EditText 
+            android:id="@+id/ques_12_3"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dip"
+        	android:hint="请输入答案"
+        	android:maxLines="1"
+        	android:textSize="@dimen/ques_text"
+        	android:background="@null"/>
+	</LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip">
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dip"
+        	android:text="45 - 7 = "
+        	android:textSize="@dimen/ques_text"/>
+        <EditText 
+            android:id="@+id/ques_12_4"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dip"
+        	android:hint="请输入答案"
+        	android:maxLines="1"
+        	android:textSize="@dimen/ques_text"
+        	android:background="@null"/>
+	</LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip">
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="5dip"
+        	android:text="37 - 7 = "
+        	android:textSize="@dimen/ques_text"/>
+        <EditText 
+            android:id="@+id/ques_12_5"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dip"
+        	android:hint="请输入答案"
+        	android:maxLines="1"
+        	android:textSize="@dimen/ques_text"
+        	android:background="@null"/>
+	</LinearLayout>
+</LinearLayout>
+

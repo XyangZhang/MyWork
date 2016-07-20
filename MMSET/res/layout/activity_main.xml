@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" 
+        android:background="@drawable/title_bar">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="MMSE检测"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip">
+        <TextView 
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:text="注意事项"/>
+        <LinearLayout 
+            android:id="@+id/main_inform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/main_title"
+            android:orientation="vertical">
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textSize="17sp"
+            	android:layout_marginTop="30dip"
+            	android:text="1. 请在志愿者帮助下使用"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textSize="17sp"
+            	android:layout_marginTop="20dip"
+            	android:text="2. 回答问题逐个进行，只有一次选择机会，不能返回"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textSize="17sp"
+            	android:layout_marginTop="20dip"
+            	android:text="3. 分数将会在全部问题回答完后给出，并得到相应检测结果"/>
+            <TextView
+                android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:textSize="15sp"
+            	android:layout_marginTop="50dip"
+            	android:text="点击确认开始进行检测"/>
+        </LinearLayout>
+        <Button 
+            android:id="@+id/main_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:text="确      认"
+            android:layout_marginTop="5dip"
+            android:layout_below="@+id/main_inform"
+            android:background="@drawable/confirm_button_1"/>
+    </RelativeLayout>
+        
+
+</LinearLayout>
