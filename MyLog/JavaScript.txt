@@ -1,0 +1,185 @@
+
+var add = function (a, b) {
+	return a+b;
+};
+
+function add(a, b) {
+	return a+b;
+};
+
+add(a,b);
+
+add(a,b);
+
+
+var a = callServer();
+var b = 3 + 4;
+
+$.ajax({
+	url: 'xxxx.com',
+	success: function (data) {
+		console.log(data);
+	}
+});
+
+console.log(123);
+
+var c = {
+	a: 1,
+	b: function () {
+
+	},
+	c: []
+};
+
+
+key-value pair
+
+hashmap
+
+struct
+
+
+function as data
+
+
+callback
+
+NaN
+undefined
+null
+
+Number
+
+function () {
+	var i,j;
+    let i,j;
+
+	function f () {
+		print(f)
+	}
+}
+
+ECMAScript Javascript
+
+[]
+
+
+<?php
+
+
+$userId =  $_POST['userId'];
+
+mysql_('select * from id="' + $userId + '"')
+
+email  ' drop datatable * ; --
+
+sql injection
+
+
+
+
+mvc
+
+desgin pattern
+architectural pattern
+
+3 layer 
+presentation layer
+business logic
+data access
+
+
+control complexity
+
+7 +- 2
+
+
+
+javascript -> DOCUMENT OBJECT MODEL
+
+javascript (language)
+
+var i = {};
+function () {
+	
+}
+[];
+if 
+else
+
+underscore
+
+$('#')
+
+IO
+
+dom api
+
+document.getElementById
+window
+
+setTimeout
+setInterval
+
+
+es6
+
+
+todoMVC
+
+db.xxxx.find({}, function () {
+	
+})
+
+
+
+MVC
+
+MVC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var i ,j;
+
+
+for (i = 0 ; i< n , i ++)
+	if (a[i] == = )	{
+		a[i + lasdjf] =
+	}
+
+	if ()
+		continue;
+
+	for () {
+		if (a[])
+			break;
+	}
+
+
+
+
+
+
+
+
+
+
+

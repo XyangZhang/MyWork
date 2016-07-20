@@ -1,0 +1,90 @@
+启动mongodb服务：
+mongod --dbpath E:\MongoDB\db
+mongod --dbpath E:\MongoDB\db --port27001
+
+一般启动用这种方式：
+mongod -f E:\MongoDB\mongodb.conf
+mongo --port=27001
+
+show databases;
+use zxy;
+
+
+db.dept.insert({"deptno":10, "dname":"财务部", "loc":"北京"});
+show collections; // 查看集合
+db.dept.find(); // 查看dept表的数据
+
+var deptData = {
+	"deptno": 20,
+	"dname": "研发部",
+	"loc": "深圳",
+	"count": 20,
+	"avg":8000.0
+};
+db.dept.insert(deptData);
+
+db.dept.findOne();
+
+删除数据：
+db.dept.remove({"_id" : ObjectId("577f67242f8a9cc40a3ffa0b")});
+
+删除集合：
+语法：db.集合名称.drop();
+删除当前所在的数据库：
+语法：db.dropDatabase();
+
+
+
+========数据操作========
+数据增加：
+db.infos.insert({"url" : "www.mldn.cn"});
+保存数组：
+db.infos.insert([{"url" : "www.mldn.cn"}, {"url" : "www.mldnjava.cn"}]);
+
+for (var x=0; x<100; x++) {
+	db.infos.insert({"url" : "mldn" + x});
+}
+
+数据查询：
+db.集合名称.find({查询条件} [, {设置显示的字段}]);
+db.infos.find({"url" : "www.mldn.cn"});
+db.infos.find({"url" : "www.mldn.cn"}, {"_id" : 0, "url" : 1});
+
+db.infos.find({"url" : "www.mldn.cn"}).pretty();
+关系查询：
+大于($gt)、小于($lt)、大于等于($gte)、小于等于($lte)、不等于($ne)、等于(key : value);
+
+db.students.drop();
+db.students.insert({"name" : "张三", "sex" : "男", "age" : 19, "score" : 89, "address" : "海淀区"});
+db.students.insert({"name" : "李四", "sex" : "女", "age" : 20, "score" : 59, "address" : "朝阳区"});
+db.students.insert({"name" : "王五", "sex" : "女", "age" : 19, "score" : 99, "address" : "西城区"});
+db.students.insert({"name" : "赵六", "sex" : "男", "age" : 20, "score" : 100, "address" : "东城区"});
+db.students.insert({"name" : "孙七", "sex" : "男", "age" : 19, "score" : 20, "address" : "海淀区"});
+db.students.insert({"name" : "王八", "sex" : "女", "age" : 21, "score" : 0, "address" : "海淀区"});
+db.students.insert({"name" : "刘九", "sex" : "男", "age" : 19, "score" : 70, "address" : "朝阳区"});
+db.students.insert({"name" : "钱十", "sex" : "女", "age" : 21, "score" : 56, "address" : "西城区"});
+db.students.find().pretty();
+db.students.find({"name" : "张三"}).pretty();
+db.students.find({"sex" : "男"}).pretty();
+年龄大于19岁
+db.students.find({"age" : {"$gt" : 19}}).pretty();
+db.students.find({"score" : {"$gte" : 60}}).pretty();
+db.students.find({"name" : {"$ne" : "王五"}}).pretty();
+
+逻辑运算：
+与($and)、或($or)、非($not、$nor)
+
+and通过逗号实现
+db.students.find({"age" : {"$gt" : 19, "$lte" : 20}}).pretty();
+db.students.find({"age" : {"$ne" : {"$gt" : 19, "$lte" : 20}}}).pretty();
+db.students.find({"$or" : [
+	{"age" : {"$gt" : 19}}, 
+	{"score" : {"$gt" : 90}}
+]}).pretty();
+db.students.find().pretty();
+
+
+db.infos.find();
+db.infos.find();
+db.infos.find();
+db.infos.find();

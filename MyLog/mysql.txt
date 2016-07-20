@@ -1,0 +1,25 @@
+// 登陆mysql，没有空格！
+mysql -uroot -pmysqladmin
+3、建立一个新的数据库 --> zxy，使用utf-8编码（cmd为gbk，会出现乱码）
+create database zxy character set utf8;
+删除数据库：
+drop database zxy;
+4、查看所有的数据库：
+show databases;
+5、使用zxy数据库：
+use zxy;
+
+6、建立数据表，“engine=innodb”表示此表支持事务处理功能：
+create table news(
+	nid int auto_increment,
+	title varchar(30) not null,
+	content text,
+	constraint pk_nid primary key(nid)
+) engine=innodb;
+增加数据：
+insert into news (title,content) values ('xiaodiaozizuosaochu','huanqing');
+7、如果要在MySQL之中取得增长后的主键使用如下的语法：
+select last_insert_id();
+8、分页操作：
+查询 limit 开始行,长度
+select * from news limit 0,5;

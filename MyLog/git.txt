@@ -1,0 +1,76 @@
+配置全局用户名及email地址：
+git config --global user.name "XiaoyangZhang"
+git config --global user.email "zxytongxin@163.com"
+
+查看信息：
+git config -l
+
+创建仓库（版本库）（respository）：
+git init
+
+查看当前仓库的状态：
+git status
+现在的开发属于主分支：On branch master；
+初始化仓库的提交：Initial commit；
+未标记的文件：Untracked files；
+
+将文件加入到暂存库之中：
+git add Hello.java
+全部加入：
+git add .
+
+提交文件信息，-m参数进行注释的编写：
+git commit -m "New Java File - Hello.java Create"
+
+查看针对于“Hello.java”文件的日志信息：
+git log Hello.java
+
+查看文件的前后区别：
+git diff Hello.java
+
+将修改后的代码加入到暂存区后进行提交：
+git commit -a -m "Update Hello.java File. Add Two Lines"
+
+查询当前修改后的日志信息：
+git log --pretty=oneline
+
+回退一步：
+git reset --hard HEAD~1
+
+找到所有的已经删除的信息commitid
+git reflog
+
+从暂存区之中退出：
+git reset HEAD Hello.java
+
+恢复原始状态：
+git checkout -- Hello.java
+
+
+
+
+生成一个SSH Key，在windows平台上可以直接使用“git bash”工具创建
+
+
+需要生成一个RSA编码的KEY：
+ssh-keygen -t rsa -C "zxytongxin@163.com"
+921025swyxgc
+
+
+https://github.com/XyangZhang/MyGitPro.git
+把GITHUB与本地仓库相关联：
+git remote add origin https://github.com/XyangZhang/MyWork.git
+git remote add myorigin https://github.com/XiaoyZhang/XiaoyangZhang.git
+
+git remote set-url origin https://github.com/XyangZhang/MyWork.git
+git remote -v
+git remote rm myorigin
+将所有的内容推送到GITHUB上：
+git push -u origin master
+git push -u myorigin master
+
+修改后的文件提交：
+git commit -a -m "change git.txt file"
+git push origin master
+克隆
+git clone https://github.com/XiaoyZhang/zxyback.git
