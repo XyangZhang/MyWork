@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>雇员管理操作</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="js/emp.js"></script>
+		<script type="text/javascript" src="js/zxy.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/zxy.css">
+	</head>
+	<body>
+		<form action="demo.htm" method="post" onsubmit="return validate()">
+			<table border="1" cellpadding="5" cellspacing="0" width="100%" bgcolor="#F2F2F2">
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td colspan="3">
+						<span class="title">增加雇员信息</span>
+					</td>
+				</tr>
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td width="20%"><strong>雇员编号：</strong></td>
+					<td width="40%"><input type="text" name="empno" id="empno" class="init" maxlength="4" size="4" onblur="validateEmpno()"></td>
+					<td width="40%"><span id="empnoMsg"></span></td>
+				</tr>
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td><strong>雇员姓名：</strong></td>
+					<td><input type="text" name="ename" id="ename" class="init" onblur="validateEname()"></td>
+					<td><span id="enameMsg"></span></td>
+				</tr>
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td><strong>雇员职位：</strong></td>
+					<td><input type="text" name="job" id="job" class="init" onblur="validateJob()"></td>
+					<td><span id="jobMsg"></span></td>
+				</tr>
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td><strong>雇佣日期：</strong></td>
+					<td><input type="text" name="hiredate" id="hiredate" class="init" onblur="validateHiredate()"></td>
+					<td><span id="hiredateMsg"></span></td>
+				</tr>
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td><strong>基本工资：</strong></td>
+					<td><input type="text" name="sal" id="sal" class="init" onblur="validateSal()"></td>
+					<td><span id="salMsg"></span></td>
+				</tr>
+				<tr onmousemove="changeColor(this, 'green')" onmouseout="changeColor(this, 'white')">
+					<td colspan="3">
+						<input type="submit" value="提交">
+						<input type="reset" value="重置">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
