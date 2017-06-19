@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 /**
- * ±¾Àà×¨ÃÅ¸ºÔğÊı¾İ¿âµÄÁ¬½ÓÓë¹Ø±Õ²Ù×÷£¬ÔÚÊµÀı»¯±¾Àà¶ÔÏóÊ±¾ÍÒâÎ¶×ÅÒª½øĞĞÊı¾İ¿âµÄ¿ª·¢
- * ËùÒÔÔÚ±¾ÀàµÄ¹¹Ôì·½·¨ÀïÒª½øĞĞÊı¾İ¿âÇı¶¯¼ÓÔØÓëÊı¾İ¿âÁ¬½ÓÈ¡µÃ
+ * æœ¬ç±»ä¸“é—¨è´Ÿè´£æ•°æ®åº“çš„è¿æ¥ä¸å…³é—­æ“ä½œï¼Œåœ¨å®ä¾‹åŒ–æœ¬ç±»å¯¹è±¡æ—¶å°±æ„å‘³ç€è¦è¿›è¡Œæ•°æ®åº“çš„å¼€å‘
+ * æ‰€ä»¥åœ¨æœ¬ç±»çš„æ„é€ æ–¹æ³•é‡Œè¦è¿›è¡Œæ•°æ®åº“é©±åŠ¨åŠ è½½ä¸æ•°æ®åº“è¿æ¥å–å¾—
  * @author Zhangxy
  *
  */
@@ -14,33 +14,33 @@ public class DatabaseConnection {
 	private static final String DBDRIVER = "com.mysql.jdbc.Driver";
 	private static final String DBURL = "jdbc:mysql://localhost:3306/zxy";
 	private static final String DBUSER = "root";
-	private static final String DBPASS = "mysqladmin";
+	private static final String DBPASS = "root";
 	
 	private Connection conn = null;
 	/**
-	 * ÔÚ¹¹Ôì·½·¨ÀïÃæÎªconn¶ÔÏó½øĞĞÊµÀı»¯£¬¿ÉÒÔÖ±½ÓÈ¡µÃÊı¾İ¿âµÄÁ¬½Ó¶ÔÏó
-	 * ÓÉÓÚËùÓĞµÄ²Ù×÷¶¼ÊÇ»ùÓÚÊı¾İ¿âÍê³ÉµÄ£¬Èç¹ûÊı¾İ¿âÈ¡µÃ²»µ½Á¬½Ó£¬ÄÇÃ´Ò²¾ÍÒâÎ¶×ÅËùÓĞµÄ²Ù×÷¶¼¿ÉÒÔÍ£Ö¹ÁË
+	 * åœ¨æ„é€ æ–¹æ³•é‡Œé¢ä¸ºconnå¯¹è±¡è¿›è¡Œå®ä¾‹åŒ–ï¼Œå¯ä»¥ç›´æ¥å–å¾—æ•°æ®åº“çš„è¿æ¥å¯¹è±¡
+	 * ç”±äºæ‰€æœ‰çš„æ“ä½œéƒ½æ˜¯åŸºäºæ•°æ®åº“å®Œæˆçš„ï¼Œå¦‚æœæ•°æ®åº“å–å¾—ä¸åˆ°è¿æ¥ï¼Œé‚£ä¹ˆä¹Ÿå°±æ„å‘³ç€æ‰€æœ‰çš„æ“ä½œéƒ½å¯ä»¥åœæ­¢äº†
 	 */
 	public DatabaseConnection() {
 		try {
 			Class.forName(DBDRIVER);
 			this.conn = DriverManager.getConnection(DBURL, DBUSER, DBPASS);
-		} catch (Exception e) { // ËäÈ»´Ë´¦ÓĞÒì³££¬µ«ÊÇÅ×³öµÄÒâÒå²»´ó
+		} catch (Exception e) { // è™½ç„¶æ­¤å¤„æœ‰å¼‚å¸¸ï¼Œä½†æ˜¯æŠ›å‡ºçš„æ„ä¹‰ä¸å¤§
 			e.printStackTrace();
 		}
 	}
 	/**
-	 * È¡µÃÒ»¸öÊı¾İ¿âµÄÁ¬½Ó¶ÔÏó
-	 * @return ConnectionÊµÀı»¯¶ÔÏó
+	 * å–å¾—ä¸€ä¸ªæ•°æ®åº“çš„è¿æ¥å¯¹è±¡
+	 * @return Connectionå®ä¾‹åŒ–å¯¹è±¡
 	 */
 	public Connection getConnection() {
 		return this.conn;
 	}
 	/**
-	 * ¸ºÔğÊı¾İ¿âµÄ¹Ø±Õ
+	 * è´Ÿè´£æ•°æ®åº“çš„å…³é—­
 	 */
 	public void close() {
-		if (this.conn != null) { // ±íÊ¾ÏÖÔÚ´æÔÚÓĞÁ¬½Ó¶ÔÏó
+		if (this.conn != null) { // è¡¨ç¤ºç°åœ¨å­˜åœ¨æœ‰è¿æ¥å¯¹è±¡
 			try {
 				this.conn.close();
 			} catch (SQLException e) {

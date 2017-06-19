@@ -26,8 +26,8 @@ public class IEmpServiceTest {
 	public void testInsert() {
 		Emp vo = new Emp();
 		vo.setEmpno(empno);
-		vo.setEname("°¢±¾");
-		vo.setJob("Ö°Î»");
+		vo.setEname("é˜¿æœ¬");
+		vo.setJob("èŒä½");
 		vo.setHiredate(new Date());
 		vo.setSal(10.0);
 		vo.setComm(0.5);
@@ -43,8 +43,8 @@ public class IEmpServiceTest {
 	public void testUpdate() {
 		Emp vo = new Emp();
 		vo.setEmpno(8889);
-		vo.setEname("³Â¹Úµv");
-		vo.setJob("ÈËÌå");
+		vo.setEname("é™ˆå† ç¥");
+		vo.setJob("äººä½“");
 		vo.setHiredate(new Date());
 		vo.setSal(10.0);
 		vo.setComm(0.5);

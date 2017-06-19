@@ -12,13 +12,13 @@ public class TestEmpSplit {
 	public static void main(String[] args) throws Exception {
 		Map<String, Object> map = ServiceFactory.getIEmpServiceInstance().list(1, 5, "ename", "");
 		int count = (Integer) map.get("empCount");
-		System.out.println("Êı¾İÁ¿" + count);
+		System.out.println("æ•°æ®é‡" + count);
 		
 		List<Emp> all = (List<Emp>) map.get("allEmps");
 		Iterator<Emp> iter = all.iterator();
 		while (iter.hasNext()) {
 			Emp vo = iter.next();
-			System.out.println(vo.getEname() + "£¬" +vo.getJob());
+			System.out.println(vo.getEname() + "ï¼Œ" +vo.getJob());
 		}
 	}
 

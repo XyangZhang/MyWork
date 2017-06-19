@@ -13,12 +13,12 @@ import com.zxy.vo.Emp;
 
 public class EmpDAOImpl implements IEmpDAO {
 
-	private Connection conn;  // ��Ҫ����Connection�������
+	private Connection conn;  // 需要利用Connection对象操作
 	private PreparedStatement pstmt;
 	/**
-	 * ���Ҫ��ʹ�����ݲ����ԭ���ԵĹ��ܲ���ʵ�֣�����Ҫ�ṩ��Connection��ڶ���
-	 * ���⣬���ڿ���֮��ҵ���Ҫ�������ݿ⣬�������ݿ�Ĵ���رս���ҵ��㴦��
-	 * @param conn ��ʾ���ݿ�����Ӷ���
+	 * 如果要想使用数据层进行原子性的功能操作实现，必须要提供有Connection借口对象
+	 * 另外，由于开发之中业务层要调用数据库，所以数据库的打开与关闭交由业务层处理
+	 * @param conn 表示数据库的连接对象
 	 */
 	public EmpDAOImpl(Connection conn) {
 		this.conn = conn;
@@ -56,7 +56,7 @@ public class EmpDAOImpl implements IEmpDAO {
 
 	@Override
 	public boolean doRemoveBatch(Set<Integer> ids) throws Exception {
-		if (ids == null || ids.size() == 0) {  // û��Ҫɾ��������
+		if (ids == null || ids.size() == 0) {  // 没有要删除的数据
 			return false;
 		}
 		StringBuffer sql = new StringBuffer();
